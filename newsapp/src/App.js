@@ -12,7 +12,7 @@ const App = () => {
       key: alankey,
       onCommand: ({command,articles}) => {
         if(command === 'newHeadlines'){
-          // setNewsArticles(articles);
+          setNewsArticles(articles);
           console.log(articles);
         }
       }
@@ -20,8 +20,8 @@ const App = () => {
   }, [] )
   return (
     <div>
-      <h1>Alan AI News App</h1>
-      {/* <NewsCards articles={articles} /> */}
+      <h1 style={{textAlign:'center'}}>Alan AI News App</h1>
+      <NewsCards articles={newsArticles} />
     </div>
   )
 }
