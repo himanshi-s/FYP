@@ -1,9 +1,11 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles({
     container: {
         padding : '0 5%',
         width: '100%',
         margin: 0,
+        fontFamily: 'Poppins, sans-serif',
     },
 
     card: {
@@ -19,8 +21,12 @@ export default makeStyles({
     },
     infoCard: {
         display: 'flex',
+        fontFamily: 'Poppins, sans-serif',
         flexDirection: "column",
         textAlign: "center"
-    }
+    },
+    // .MuiTypography-h6: {
+    //     fontFamily: 'Poppins, sans-serif'
+    //   }
 });
 
