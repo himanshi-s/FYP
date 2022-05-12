@@ -36,7 +36,9 @@ const NewsCard = ({ article: {description,publishedAt, source,title,url,urlToIma
       <CardActions className={classes.CardActions}>
         <Button size='small' color='primary'>Learn More</Button>
         <Typography variant='h5' color='textSecondary'>{i+1}</Typography>
+        <Button size='small' color='primary'>Save This!</Button>
       </CardActions>
+      
     </Card>
   );
 }

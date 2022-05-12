@@ -8,13 +8,14 @@ export default makeStyles({
     border: 'solid',
   },
   fullHeightCard: {
-    height: '100%',
+    height: '95%',
   },
   card: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     borderBottom: '10px solid white',
+    // height:'80vh'
   },
   activeCard: {
     borderBottom: '10px solid #22289a',
