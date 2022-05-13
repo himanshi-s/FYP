@@ -9,6 +9,8 @@ const NewsCard = ({ article: {description,publishedAt, source,title,url,urlToIma
   const [elRefs, setElRefs] = useState([]);
   const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
 
+  
+
   useEffect(() =>{
     window.scroll(0, 0);
     setElRefs((refs) => Array(20).fill().map((_, j) => refs[j] || createRef()));

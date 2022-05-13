@@ -1,8 +1,8 @@
 import React from 'react';
 import NewsCard from '../NewsCard/NewsCard';
-import { Grid, Grow, Typography } from '@material-ui/core';
+import { Grid, Grow,Card, Typography } from '@material-ui/core';
 import useStyles from './styles.js'
-
+// import { Text } from 're'
 const infoCards = [
   { color: '#00838f', title: 'Latest News', text: 'Give me the latest news' },
   { color: '#1565c0', title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports', text: 'Give me the latest Technology news' },
@@ -10,7 +10,7 @@ const infoCards = [
   { color: '#283593', title: 'News by Sources', info: 'CNN, Wired, BBC News, Time, IGN, Buzzfeed, ABC News...', text: 'Give me the news from CNN' },
 ];
 
-const NewsCards = ({ articles,activeArticle }) => {
+const NewsCards = ({ articles,activeArticle, terms }) => {
   const classes = useStyles();
 
   if(!articles.length){
@@ -33,9 +33,7 @@ const NewsCards = ({ articles,activeArticle }) => {
             </div>
           </Grid>
         ))}
-        <h3>your recent</h3>
       </Grid>
-      
       </Grow>
 
     )
@@ -49,7 +47,9 @@ const NewsCards = ({ articles,activeArticle }) => {
           <NewsCard activeArticle={activeArticle} article={article} i={i}/>
         </Grid>
       ) )}
+      
       </Grid>
+     
     </Grow>
   )
 }
